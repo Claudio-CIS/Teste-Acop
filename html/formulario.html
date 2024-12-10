@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/Style.css">
+    <title>modal</title>
+</head>
+<body>
+
+    <button class="open-modal"  data-modal="modal-1">
+        Cadastro
+    </button>
+
+    <dialog id="modal-1">
+        <form>
+            <div class="modal-header">
+                <h1 class="modal-title">
+                Formulario de Cadastro
+                </h1>           
+                <button class="close-modal"  data-modal="modal-1" type="button">
+                X
+                </button>
+            </div>
+
+            <div class="modal-body">
+            <div class="<input-group=">
+                <label for="email">
+                Email
+                </label>
+                <input type="text" id="email" name="email" placeholder="name@example.com">
+            </div>
+
+            <div class="<input-group=">
+                <label for="password">
+                Password
+                </label>
+                <input type="password" id="password" name="password" placeholder="...........">
+            </div>
+
+            <div class="password-options">
+            <div class="remember-password">
+                <input type="checkbox" name="remember_password" id="remember_password">
+                <label for="remember_password">Confirme a Senha</label>
+            </div>
+                <a href="#" class="forgot-password">forgot password</a>
+            </div>
+
+                <button id="login_button">login accont</button>
+            <div class="register">
+                <span>not register</span>
+                <a href="#">login here</a>
+            </div>
+            </div>
+        </form>
+    </dialog>    
+<script src="/script.js"></script> 
+</body>
+</html>

@@ -34,6 +34,7 @@ header{
     padding: .8rem;
     background-color: var(--dark7);
     min-height: 50px;
+    font-size: 40px;
 }
 
 .box-img-header{
@@ -111,6 +112,7 @@ section{
     flex-wrap: wrap;
     align-items: center;
     min-height: 650px;
+    font-size: 2rem;
 }
 
 .primeira-secao > div{
@@ -121,16 +123,17 @@ section{
 }
 h1{
     font-size: 4rem;
-    color:var(--white);
+    color:black;
     letter-spacing: 4px;
 }
 
 strong{
-    color: var(--dark9);
+    color: var(--white);
 }
 
 .primeira-secao p{
     color: var(--white);
+    
 }
 
 .box-img-main{
@@ -139,8 +142,8 @@ strong{
 }
 
 .segunda-secao{
-    background-color: var(--dark1);
-    height: 1200px;
+    background-color: var(--dark6);
+    height: 1300px;
 }
 
 .titulo{
@@ -193,7 +196,7 @@ strong{
 }
 
 .quinta-secao{
-    height: 900px;
+    height: 950px;
     padding: 8rem;
     font-size: 20px;
     flex-wrap: wrap;
@@ -209,17 +212,17 @@ strong{
 footer{
     display: flex;
     background-color: var(--dark1);
-    height:900px;
+    height:750px;
     padding: 8rem;
     font-size: 40px;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 10px;
    
 }
 
   /* Aside */
-  aside {
+aside {
     background-color: var(--dark1);
     padding: 20px;
   }
@@ -258,3 +261,4 @@ aside form input[type="submit"]{/*configura botao enviar*/
     color: white;
     font-weight: bold;
 }
+
