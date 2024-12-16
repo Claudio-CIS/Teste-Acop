@@ -1,65 +1,107 @@
+<!--estrutura pg web-->
 <!DOCTYPE html>
+<!--Idioma-->
 <html lang="pt-br">
+<!--Ligacoes com outras paginas + Automacao (Metadados)-->    
 <head>    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" >
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/CSS/style.css">
+    
+
     <title>Site ACOP 01.1.1</title>
+
 </head>
+<!--Pagina Web-->
 <body>
+    <!--Cabecalho-->    
     <header>
+        <!--Organizacao dos Itens-->
         <div class="box-img-header">
             <img class="img-logo-ACOP" src="/imagens/logo sem fundo.png" alt="logo da associacao">
         </div>
-
+        <!--ligacao para outras paginas-->
         <nav>
             <a href="Historico.html" class="nav-links">Historico</a>
             <a href="Projetos.html" class="nav-links">Projetos</a>
             <a href="PrestacaodeContas.html" class="nav-links">Prestacao de Contas</a>
+            <a href="Filiacao.html" class="nav-links"></a>
             <a href="#contatos" class="nav-links">Contatos</a>
         </nav>
-
+        <!--Extrutura botao Cadastro-->
         <div class="box-btn-acao">
-            <button class="btn-action" >Cadastro</button>
-            <button class="btn-action" >Entrar</button>
+            <!--Botao Cadastro-->          
+            <nav id="Botao-Cadastro">
+                <ul>
+                    <li> 
+                        <!--Ligacao Formulario-->                       
+                        <a href="/html/formulario.html">
+                            <!--Botao Cadastro 01-->
+                            <button class="btn-cadastro">Cadastro</button>                     
+                        </a>
+                    </li>
+                </ul>                             
+            </nav> 
+            <!--botao Entrar-->
+            <nav id="Botao-Entrar">
+                <ul>
+                    <li> 
+                        <!--Ligacao Formulario-->                       
+                        <a href="/html/formulario.html">
+                            <!--Botao Entrar 01-->
+                            <button class="btn-action" >Entrar</button>                     
+                        </a>
+                    </li>
+                </ul>                             
+            </nav>                             
         </div>
     </header>
 
+    <!--Corpo da Pagina-->
     <main>
-
-        <section class="primeira-secao">
+        <!--extruturas 01 da Pagina-->
+        <section id="Incio" class="primeira-secao">
             <div>
+                <!--Titulo 01-->
                 <h1>Venha se <strong>Associar</strong> para tornar ainda melhor nossa comunidade e seu bairro.</h1>                
-                <a class="btn-action link-action" href="#contatos">Saber mais</a>
+                <!--Botao Filiacao-->
+                <a class="btn-action link-action" href="Filiacao.html">Filiacao</a>
             </div>
-
+            <!--Banner Propoaganda 01-->
             <div class="box-img-main">
                 <img class="img-Banner-ACOP" src="/imagens/Banner ACOP 01.2.png" alt="Banner ACOP">
             </div>            
         </section>
-
+        <!--extrutura 02 da Pagina-->
         <section id="Diretoria" class="segunda-secao">
+            <!--Receba Noticias-->
             <aside>
-                <!--titulo formulario-->
-                    <h3>Receba nossas Noticias.</h3>
-                <!--formulario cadastro receba noticias-->
-                    <form action="https://sheetdb.io/api/v1/gf7665omrm2n9"method="post"name="Form Receba nossas Noticias">                        
+                <!--Titulo 02 da Pagina-->
+                <h1>Receba nossas Noticias.</h1>
+                    <!--Automacao para Salvar Dados do Formulario-->
+                    <form action="https://sheetdb.io/api/v1/gf7665omrm2n9"method="post"name="Form Receba nossas Noticias">                                                
+                        <!--formulario cadastro receba noticias-->
                         <input type="text" name="Nome" placeholder="Nome">
                         <input type="tel" name="Telefone" placeholder="Telefone">
+                        <!--Botao Enviar-->
                         <input type="submit" value="Enviar">
                     </form>        
             </aside>
+            <!--Titulo 03 da Pagina-->
             <center>
             <h2 class="titulo">Diretoria</h2><br><br><br><br>
+                <!--Banner Propoaganda 02-->
                 <div>
                     <img class="Banner-da-Diretoria" src="/imagens/Chapa 01 2023.jpg" alt="Banner-da-Diretoria">
                 </div>
             </center>              
         </section>
-
+        <!--extrutura 03 da Pagina-->
         <section id="Historico" class="terceira-secao" >
+            <!--Titulo 04 da Pagina-->
             <h2 class="titulo">Historico</h2>
+                <!--Lista 01-->
                 <ul>
                 <li>11/2022 Criacao da Comissao de Moradores</li>
                 <li>12/2022 Convocacao de Assembleia Ordinaria (Inicio do processo eleitoral)</li>
@@ -70,9 +112,11 @@
                 <li>10/2024 Decreto de Utilidade Publica</li>
                 </ul>
         </section>
-
+        <!--extrutura 04 da Pagina-->
         <section id="Projetos" class="quarta-secao">
+            <!--Titulo 05 da Pagina-->
             <h2 class="titulo">Projetos</h2>
+                <!--Lista 02-->
                 <div> 
                     <ul>
                     <li>Curso de Informatica</li>
@@ -86,40 +130,48 @@
                     </ul>
                 </div>                
         </section>
-
+        <!--extrutura 05 da Pagina-->
         <section id="prestacao-de-contas" class="quinta-secao">
+            <!--Titulo 06 da Pagina-->
             <h2 class="titulo">Prestacao de Contas</h2><br><br><br><br>
+                <!--Banner Propoaganda 02-->
                 <div>
                     <center>
                     <img class="Imagem-da-planilha" src="/imagens/PRESTAÇÃO DE CONTAS - Comissão Moradores Jardim Pinheiros1.pdf.jpg" alt="Planilha com dados de arecadacao">
                 </center>
                 </div>
         </section>
-
     </main>
 
+    <!--Extrutura do Rodape-->
     <footer id="contatos">
+        <!--Titulo 07 da Pagina-->
         <center>
         <h2 class="titulo">Contatos</h2><br><br><br><br>
-        
+            <!--Ligacao Para Redes Sociais 01-->
             <a href="https://www.instagram.com/acop.sj/" target="_blank" rel="noopener noreferrer" title="Instagran">
                 <img src="./imagens/Img Instagran.png" alt="Logo Instagran" width= "40px"></img>
                 <p>acop.sj</p><br>
             </a><br>
-
+            <!--Ligacao Para Redes Sociais 02-->
             <a href="https://www.facebook.com/acop.sj?locale=pt_BR" target="_blank" rel="noopener noreferrer" title="Facebook">
                 <img src="./imagens/facebook.png" alt="logo facebook" width="40px"></<img>
                 <p>facebook</p><br>
-            </a><br>    
+            </a><br>
+            <!--Dados de Registro-->    
             <p>
                 &copy 2023 ACOP :
                 Associacao Comunitaria Picadas do Sul CNPJ: 52.628.453/0001-60<br> 
-                Natureza Jurídica: Associação    Privada<br>
+                Natureza Jurídica: Associação Privada<br>
                 Tipo: Matriz
-                </p>
+            </p>
         </center>
     </footer>
 
+    <!--Ligacao Para Pasta de Automacao-->
+    <script src="/script.js"></script>
 </body>
-    <script src="/javascript/"></script>
+    
 </html>
+
+<!--https://www.alura.com.br/artigos/o-que-e-html-suas-tags-parte-1-estrutura-basica?utm_term=&utm_campaign=%5BSearch%5D+%5BPerformance%5D+-+Dynamic+Search+Ads+-+Artigos+e+Conte%C3%BAdos&utm_source=adwords&utm_medium=ppc&hsa_acc=7964138385&hsa_cam=11384329873&hsa_grp=164068847699&hsa_ad=703853174125&hsa_src=s&hsa_tgt=aud-1295637864136:dsa-2273097816642&hsa_kw=&hsa_mt=&hsa_net=adwords&hsa_ver=3&gad_source=2&gclid=CjwKCAiA6t-6BhA3EiwAltRFGKK2SxG5sg4eTNVU3pzR2mMqnCZEmWy3DVwbPq6oYUl1cYXJntDNmhoCVPIQAvD_BwE-->
