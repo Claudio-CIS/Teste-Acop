@@ -2,14 +2,16 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--link rel="stylesheet" href="/CSS/Style.css"-->
     <title>modal</title>
 </head>
-<body>
 
-<!--botao voltar inicio-->    
-    <header>
+    <body>
+        <!--cabecalho da pagina-->
+        <header>
+        <!--botao voltar inicio-->
         <nav id="Botao-Inicio">
              <ul>
              <li>                        
@@ -19,13 +21,14 @@
              </li>
              </ul>                             
          </nav>   
-    </header>
+        </header>
 
-<!--Foram do Botao cadastro-->
-    <button class="open-modal" data-modal="modal-1">Cadastro</button>
-<!--Corpo do Pop Up-->
-        <dialog id="modal-1">
-<!--Corpo do Formulario-->            
+        <main>
+            <!--Foram do Botao cadastro-->
+            <button class="open-modal" data-modal="modal-1">Cadastro</button>
+            <!--Corpo do Pop Up-->
+            <dialog id="modal-1">
+            <!--Corpo do Formulario-->            
             <form>
             <div class="modal-header">
                 <h1 class="modal-title">Cadastro</h1>
@@ -71,8 +74,9 @@
             </div>
             </div>
             </form>
-        </dialog>  
-<!--Automacao do Formulario-->          
-<script src="/script.js"></script> 
-</body>
+            </dialog>  
+            <!--Automacao do Formulario-->
+        </main>
+        <script src="/script.js"></script> 
+    </body>
 </html>

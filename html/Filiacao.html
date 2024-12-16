@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/CSS/style.css">
+
     <title>Filiacao</title>
 </head>
-<body>   
+<body> 
+      
     <!--Cabecalho-->   
     <header>
         <!--Organizacao dos Itens-->
@@ -15,76 +17,191 @@
         </div> 
         <!--botao voltar inicio--> 
         <nav id="Botao-Inicio">
-             <ul>
-             <li>                        
-             <a href="index.html">
-             <img src="/imagens/silhueta-de-icone-de-casa.png" width="70px" alt="Logo ACOP">                      
-             </a>
-             </li>
+            <ul>
+                <li>                        
+                    <a href="index.html">
+                        <img src="/imagens/silhueta-de-icone-de-casa.png" width="70px" alt="Logo ACOP">                      
+                    </a>
+                </li>
              </ul>                             
-         </nav> 
-          
+        </nav> 
+        <h1>Filiacao</h1>              
     </header>
+    <br>
+    <br>
     <!--Corpo da Pagina-->
     <main>
-        <center>
-        <!--Foram do Botao cadastro-->
-        <button class="open-modal" data-modal="modal-1">Cadastro</button>
-        </center>
-        <!--Corpo do Pop Up-->
-        <dialog id="modal-1">
-            <!--Corpo do Formulario-->            
-            <form>
-            <div class="modal-header">
-                <h1 class="modal-title">Cadastro</h1>
-                 <!--abre o pop up-->                             <!--Type bloqiea envio de dados-->           
-                <button class="close-modal"  data-modal="modal-1" type="button"> X </button>
-            </div>
 
-            <div class="modal-body">
-                <div class="<input-group=">
-                    <label for="email"> Nome </label>
-                    <input type="text" id="nome" name="nome" placeholder="Nome Completo">
-            </div>
+        <center><h1>Ficha de Filiacao</h1></center>
 
-            <div class="modal-body">
-                <div class="<input-group=">
-                    <label for="email"> Telefone </label>
-                    <input type="value" id="telefone" name="telefone" placeholder="Telefone">
-            </div>    
+        <section id="Formulario-3" 
+                class="primeira-secao">
+            <div class="content">
+                <form action="">
+                    <fieldset>
 
-            <div class="modal-body">
-            <div class="<input-group=">
-                <label for="email"> Email </label>
-                <input type="text" id="email" name="email" placeholder="name@example.com">
-            </div>
+                        <legend>Dados Pessoais</legend><br>
 
-            <div class="<input-group=">
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" placeholder="...........">
-            </div>
+                        <div class="row">
+                            <label for="Nome">Nome Completo:</label>
+                            <input type="text" 
+                                    id="nome" 
+                                    name="nome" 
+                                    autocomplete="off" 
+                                    required>
+                        </div>
 
-            <div class="password-options">
-            <div class="remember-password">                                                                                
-                <input type="checkbox" name="remember_password" id="remember_password">
-                <label for="remember_password">Confirme a Senha</label>
+                        <div class="row">
+                            <label for="RG">RG</label>
+                            <input type="number" 
+                                    id="RG" 
+                                    name="RG" 
+                                    min="0" 
+                                    autocomplete="off" 
+                                    required>
+                        </div>
+
+                        <div class="row">
+                            <label for="CPF">CPF</label>
+                            <input type="text" 
+                                    id="CPF" 
+                                    name="CPF" 
+                                    maxlength="14" 
+                                    min="0" 
+                                    autocomplete="off"
+                                    required>                            
+                        </div>
+                
+                        <div class="row">
+                            <label for="Nacionalidade">Nacionalidade</label>
+                            <input type="text" 
+                                    id="nacionalidade" 
+                                    name="nacionalidade" 
+                                    autocomplete="off">
+                        </div>
+
+                        <div class="row">
+                            <label for="Estado">Estado</label>
+                            <input type="text" 
+                                    id="Estado" 
+                                    name="Estado" 
+                                    autocomplete="off">
+                        </div>
+
+                        <div class="row">
+                            <label for="Municipio">Municipio</label>
+                            <input type="text" 
+                                    id="Municipio" 
+                                    name="Municipio">
+                        </div>
+
+                        <div class="row">                   
+                            <label for="dtnasc">Data de Nascimento</label><br>
+                            <input type="date" 
+                                    id="dtnasc" 
+                                    name="dtnasc" 
+                                    autocomplete="off" 
+                                    required>
+                        </div><br>
+                
+                        <div class="row">
+                            <label for="Estado-civil">Estado-civil: </label><br><br>
+                            <label for="casado">Casado</label>
+                            <input type="radio" 
+                                    value="casado" 
+                                    id="Casado" 
+                                    name="estadocivil">
+
+                            <label for="Solteiro">Solteiro</label>
+                            <input type="radio" 
+                                    value="Solteiro" 
+                                    id="Solteiro" 
+                                    name="estadocivil">                    
+                        </div><br>
+
+                        <div class="row">
+                            <label for="Filhos">Filhos:</label><br><br>
+                              <label for="nao-tenho">Nao Tenho</label>                
+                            <input type="radio" 
+                                    value="Sem-Filhos" 
+                                    id="Sem-Filhos" 
+                                    name="Filhos">
+
+                            <label for="sim-tenho">Sim Tenho</label>
+                            <input type="radio" 
+                                    value="Com-Filhos" 
+                                    id="Com-Filhos" 
+                                    name="Filhos"> 
+
+                            <label for="">Quantos Filhos</label>
+                            <input type="number" 
+                                    id="Filhos" 
+                                    name="Filhos" 
+                                    max="10" 
+                                    min="0">                           
+                        </div><br>
+                
+                        <div class="row">
+                            <label for="endereco">Endereco</label>
+                            <input type="text" 
+                                    id="texto" 
+                                    name="texto">
+
+                            <label for="numero" >numero</label>
+                            <input type="text" 
+                                    maxlength="4" 
+                                    min="0">
+
+                            <label for="CEP">CEP</label>
+                            <input type="number" 
+                                    id="CEP" 
+                                    name="CEP" 
+                                    maxlength="8" 
+                                    min="0">                   
+                        </div>
+
+                        <div class="row">
+                            <label for="phone">Telefone</label>
+                            <input id="phone" 
+                                    type="text" 
+                                    class=" form-control" 
+                                    name="phone" 
+                                    maxlength="14" 
+                                    min="0" 
+                                    autocomplete="off" 
+                                    required>
+                        </div>
+
+                        <div class="row">
+                            <label for="">E-mai:</label>
+                            <input type="email" 
+                                    id="email" 
+                                    name="email">
+                        </div><br><br>
+
+                        <div class="buttons-estatuto">
+                            <h1><label for="">Estatuto</label></h1>
+                            <a href="/PDF Documentos/0336 - Estatuto Social - 07-05-2023.pdf" 
+                                target="_blank" 
+                                rel="noopener noreferrer">Baixar</a> 
+                        </div><br><br>
+
+                    </fieldset>
+
+                    <div class="buttons">
+                        <input type="submit">
+                        <input type="reset">
+                    </div>
+
+                </form>
             </div>
-                <a href="#" class="forgot-password">forgot password</a>
-            </div>
-            <!--Botao confirma -->
-            <button id="login_button">login accont</button>
-            <div class="register">
-            <span>not register</span>
-            <a href="#">login here</a>
-            </div>
-            </div>
-            </form>
-        </dialog>
-    </main> 
+        </section><br>
+    </main>
+
     <!--Rodape-->
     <footer id="contatos">
         <center>
-        <h2 class="titulo">Contatos</h2><br><br><br><br>
+            <h2 class="titulo">Contatos</h2><br><br><br><br>
         
             <a href="https://www.instagram.com/acop.sj/" target="_blank" rel="noopener noreferrer" title="Instagran">
                 <img src="./imagens/Img Instagran.png" alt="Logo Instagran" width= "40px"></img>
@@ -94,16 +211,21 @@
             <a href="https://www.facebook.com/acop.sj?locale=pt_BR" target="_blank" rel="noopener noreferrer" title="Facebook">
                 <img src="./imagens/facebook.png" alt="logo facebook" width="40px"></<img>
                 <p>facebook</p><br>
-            </a><br>    
+            </a><br>
+
             <p>
                 &copy 2023 ACOP :
                 Associacao Comunitaria Picadas do Sul CNPJ: 52.628.453/0001-60<br> 
-                Natureza Jurídica: Associação    Privada<br>
+                Natureza Jurídica: Associação Privada<br>
                 Tipo: Matriz
-                </p>
+            </p>
         </center>
-    </footer> 
+    </footer>
+
     <!--Automacao do Formulario-->          
     <script src="/script.js"></script>
+    <script src="/main.js"></script>    
 </body>
 </html>
+
+<!--https://www.youtube.com/watch?v=OHZm00A33Fs-->

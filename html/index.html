@@ -8,11 +8,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" >
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/CSS/style.css">
-    
-
+      
     <title>Site ACOP 01.1.1</title>
-
 </head>
+
 <!--Pagina Web-->
 <body>
     <!--Cabecalho-->    
@@ -29,33 +28,59 @@
             <a href="Filiacao.html" class="nav-links"></a>
             <a href="#contatos" class="nav-links">Contatos</a>
         </nav>
-        <!--Extrutura botao Cadastro-->
-        <div class="box-btn-acao">
-            <!--Botao Cadastro-->          
-            <nav id="Botao-Cadastro">
-                <ul>
-                    <li> 
-                        <!--Ligacao Formulario-->                       
-                        <a href="/html/formulario.html">
-                            <!--Botao Cadastro 01-->
-                            <button class="btn-cadastro">Cadastro</button>                     
-                        </a>
-                    </li>
-                </ul>                             
-            </nav> 
-            <!--botao Entrar-->
-            <nav id="Botao-Entrar">
-                <ul>
-                    <li> 
-                        <!--Ligacao Formulario-->                       
-                        <a href="/html/formulario.html">
-                            <!--Botao Entrar 01-->
-                            <button class="btn-action" >Entrar</button>                     
-                        </a>
-                    </li>
-                </ul>                             
-            </nav>                             
-        </div>
+        <!--Form do Botao cadastro-->
+            <button class="open-modal" data-modal="modal-1">Cadastro</button>
+        <!--Corpo do Pop Up-->
+        <dialog id="modal-1">
+            <!--Corpo do Formulario-->            
+            <form>
+                <div class="modal-header">
+                    <h1 class="modal-title">Cadastro</h1>
+                    <!--abre o pop up-->                          <!--Type bloqiea envio de dados-->           
+                    <button class="close-modal"  data-modal="modal-1" type="button"> X </button>
+                </div>
+            
+                <div class="modal-body">
+                <div class="<input-group=">
+                    <label for="email"> Nome </label>
+                    <input type="text" id="nome" name="nome" placeholder="Nome Completo">
+                </div>
+            
+                <div class="modal-body">
+                <div class="<input-group=">
+                    <label for="email"> Telefone </label>
+                    <input type="value" id="telefone" name="telefone" placeholder="Telefone">
+                </div>    
+            
+                <div class="modal-body">
+                <div class="<input-group=">
+                    <label for="email"> Email </label>
+                    <input type="text" id="email" name="email" placeholder="name@example.com">
+                </div>
+            
+                <div class="<input-group=">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="...........">
+                </div>
+            
+                <div class="password-options">
+                <div class="remember-password">                                                                                
+                    <input type="checkbox" name="remember_password" id="remember_password">
+                    <label for="remember_password">Confirme a Senha</label>
+                </div>
+
+                <div>
+                    <a href="#" class="forgot-password">forgot password</a>
+                </div>
+            
+                <!--Botao confirma -->
+                <button id="login_button">login accont</button>
+                    <div class="register">
+                        <span>not register</span>
+                        <a href="#">login here</a>
+                    </div>
+            </form>
+        </dialog>       
     </header>
 
     <!--Corpo da Pagina-->
@@ -73,6 +98,7 @@
                 <img class="img-Banner-ACOP" src="/imagens/Banner ACOP 01.2.png" alt="Banner ACOP">
             </div>            
         </section>
+
         <!--extrutura 02 da Pagina-->
         <section id="Diretoria" class="segunda-secao">
             <!--Receba Noticias-->
@@ -87,20 +113,24 @@
                         <!--Botao Enviar-->
                         <input type="submit" value="Enviar">
                     </form>        
-            </aside>
-            <!--Titulo 03 da Pagina-->
-            <center>
-            <h2 class="titulo">Diretoria</h2><br><br><br><br>
-                <!--Banner Propoaganda 02-->
-                <div>
-                    <img class="Banner-da-Diretoria" src="/imagens/Chapa 01 2023.jpg" alt="Banner-da-Diretoria">
-                </div>
-            </center>              
+            </aside>            
+            <fieldset>
+                <!--Titulo 03 da Pagina-->
+                <center>
+                    <h2 class="titulo">Diretoria</h2><br><br><br><br>
+                    <!--Banner Propoaganda 02-->
+                    <div>
+                        <img class="Banner-da-Diretoria" src="/imagens/Chapa 01 2023.jpg" alt="Banner-da-Diretoria">
+                    </div>
+                </center> 
+            </fieldset>                  
         </section>
+
         <!--extrutura 03 da Pagina-->
         <section id="Historico" class="terceira-secao" >
-            <!--Titulo 04 da Pagina-->
-            <h2 class="titulo">Historico</h2>
+            <fieldset>
+                <!--Titulo 04 da Pagina-->
+                <h2 class="titulo">Historico</h2>
                 <!--Lista 01-->
                 <ul>
                 <li>11/2022 Criacao da Comissao de Moradores</li>
@@ -111,11 +141,14 @@
                 <li>08/2024 Registro na Junta Comercial do Municipio (Alvara de Localizacao e Funcionamento)</li>
                 <li>10/2024 Decreto de Utilidade Publica</li>
                 </ul>
+            </fieldset>           
         </section>
+
         <!--extrutura 04 da Pagina-->
         <section id="Projetos" class="quarta-secao">
-            <!--Titulo 05 da Pagina-->
-            <h2 class="titulo">Projetos</h2>
+            <fieldset>
+                <!--Titulo 05 da Pagina-->
+                <h2 class="titulo">Projetos</h2>
                 <!--Lista 02-->
                 <div> 
                     <ul>
@@ -128,18 +161,22 @@
                     <li>Escolinha de Capoeira</li>
                     <li>Curso de Empreendedorismo</li>
                     </ul>
-                </div>                
+                </div> 
+            </fieldset>                          
         </section>
+
         <!--extrutura 05 da Pagina-->
         <section id="prestacao-de-contas" class="quinta-secao">
-            <!--Titulo 06 da Pagina-->
-            <h2 class="titulo">Prestacao de Contas</h2><br><br><br><br>
+            <fieldset>
+                <!--Titulo 06 da Pagina-->
+                <h2 class="titulo">Prestacao de Contas</h2><br><br><br><br>
                 <!--Banner Propoaganda 02-->
                 <div>
                     <center>
                     <img class="Imagem-da-planilha" src="/imagens/PRESTAÇÃO DE CONTAS - Comissão Moradores Jardim Pinheiros1.pdf.jpg" alt="Planilha com dados de arecadacao">
                 </center>
                 </div>
+            </fieldset>           
         </section>
     </main>
 
@@ -149,13 +186,23 @@
         <center>
         <h2 class="titulo">Contatos</h2><br><br><br><br>
             <!--Ligacao Para Redes Sociais 01-->
-            <a href="https://www.instagram.com/acop.sj/" target="_blank" rel="noopener noreferrer" title="Instagran">
-                <img src="./imagens/Img Instagran.png" alt="Logo Instagran" width= "40px"></img>
+            <a href="https://www.instagram.com/acop.sj/" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                title="Instagran">
+                <img src="./imagens/Img Instagran.png" 
+                    alt="Logo Instagran" 
+                    width= "40px"></img>
                 <p>acop.sj</p><br>
             </a><br>
             <!--Ligacao Para Redes Sociais 02-->
-            <a href="https://www.facebook.com/acop.sj?locale=pt_BR" target="_blank" rel="noopener noreferrer" title="Facebook">
-                <img src="./imagens/facebook.png" alt="logo facebook" width="40px"></<img>
+            <a href="https://www.facebook.com/acop.sj?locale=pt_BR" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                title="Facebook">
+                <img src="./imagens/facebook.png" 
+                    alt="logo facebook" 
+                    width="40px"></<img>
                 <p>facebook</p><br>
             </a><br>
             <!--Dados de Registro-->    
@@ -170,6 +217,14 @@
 
     <!--Ligacao Para Pasta de Automacao-->
     <script src="/script.js"></script>
+    <script src="/main.js"></script> 
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+    
+    <script>
+    $('#phone_with_ddd').mask('(00) 0000-0000');
+    $('#cep').mask('00000-000');
+    </script>
 </body>
     
 </html>
