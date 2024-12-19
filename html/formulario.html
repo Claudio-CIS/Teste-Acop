@@ -5,78 +5,108 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--link rel="stylesheet" href="/CSS/Style.css"-->
-    <title>modal</title>
+    <title>Formulario de Cadastro</title>
 </head>
+    <!--PG WEB-->
+    <body class="body-cadastro" id="body-pg-cadastro">
 
-    <body>
-        <!--cabecalho da pagina-->
-        <header>
-        <!--botao voltar inicio-->
-        <nav id="Botao-Inicio">
-             <ul>
-             <li>                        
-             <a href="index.html">
-             <img src="/imagens/silhueta-de-icone-de-casa.png" width="70px" alt="Logo ACOP">                      
-             </a>
-             </li>
-             </ul>                             
-         </nav>   
+        <!--cabecalho PG formulario-->
+        <header class="header-cadastro" id="header-pg-cadastro">
+            <!--logo da acop-->
+            <div class="box-img-header">
+                <img class="img-logo-ACOP" 
+                    src="/imagens/logo sem fundo.png" 
+                    alt="logo da associacao">
+            </div>            
         </header>
 
-        <main>
-            <!--Foram do Botao cadastro-->
-            <button class="open-modal" data-modal="modal-1">Cadastro</button>
-            <!--Corpo do Pop Up-->
-            <dialog id="modal-1">
-            <!--Corpo do Formulario-->            
-            <form>
-            <div class="modal-header">
-                <h1 class="modal-title">Cadastro</h1>
-                 <!--abre o pop up-->                             <!--Type bloqiea envio de dados-->           
-                <button class="close-modal"  data-modal="modal-1" type="button"> X </button>
+        <main class="main-cadastro" id="main-pg-cadastro">
+
+            <!--btn abre PopUp cadastro-->
+            <div>
+                <button class="open-modal" data-modal="modal-1">Cadastro</button>
             </div>
 
-            <div class="modal-body">
-                <div class="<input-group=">
+            <!--Corpo do Pop Up-->
+            <dialog class="PopUp-modal-1" id="modal-1">
+                <!--Corpo do Formulario-->            
+                <form class="form-cadastro">
+                    <div class="modal-header">
+                        <h1 class="modal-title">Cadastro</h1>
+                        <!--fecah o pop up--> 
+                        <!--Type bloqiea envio de dados-->           
+                        <button class="close-modal"
+                                data-modal="modal-1"
+                                type="button"> X </button>
+                    </div>
+
+                    <div class="modal-body">
+                    <div class="<input-group=">
                     <label for="email"> Nome </label>
                     <input type="text" id="nome" name="nome" placeholder="Nome Completo">
-            </div>
+                    </div>
 
-            <div class="modal-body">
-                <div class="<input-group=">
+                    <div class="modal-body">
+                    <div class="<input-group=">
                     <label for="email"> Telefone </label>
                     <input type="value" id="telefone" name="telefone" placeholder="Telefone">
-            </div>    
+                    </div>    
 
-            <div class="modal-body">
-            <div class="<input-group=">
-                <label for="email"> Email </label>
-                <input type="text" id="email" name="email" placeholder="name@example.com">
-            </div>
+                    <div class="modal-body">
+                    <div class="<input-group=">
+                        <label for="email"> Email </label>
+                        <input type="text" id="email" name="email" placeholder="name@example.com">
+                    </div>
 
-            <div class="<input-group=">
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" placeholder="...........">
-            </div>
+                    <div class="<input-group=">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" placeholder="...........">
+                    </div>
 
-            <div class="password-options">
-            <div class="remember-password">                                                                                
-                <input type="checkbox" name="remember_password" id="remember_password">
-                <label for="remember_password">Confirme a Senha</label>
-            </div>
-                <a href="#" class="forgot-password">forgot password</a>
-            </div>
-<!--Botao confirma -->
-    <button id="login_button">login accont</button>
-            <div class="register">
-            <span>not register</span>
-            <a href="#">login here</a>
-            </div>
-            </div>
-            </form>
-            </dialog>  
-            <!--Automacao do Formulario-->
+                    <div class="password-options">
+                    <div class="remember-password">                                                                                
+                        <input type="checkbox" name="remember_password" id="remember_password">
+                        <label for="remember_password">Confirme a Senha</label>
+                    </div>
+                    <a href="#" class="forgot-password">forgot password</a>
+                    </div>
+                    <!--Botao confirma -->
+                    <div>
+                    <button id="login_button">login accont</button>
+                    </div>
+                    <div class="register">
+                        <span>not register</span>
+                        <a href="#">login here</a>
+                    </div>
+                    </div>
+                </form>
+            </dialog>              
         </main>
+        
+        <!--Rodape pg filiacao-->
+        <footer class="footer-cadastro" id="footer-cadastro">
+            <center>
+                <h2 class="titulo">Contatos</h2><br><br><br><br>
+            
+                <a href="https://www.instagram.com/acop.sj/" target="_blank" rel="noopener noreferrer" title="Instagran">
+                    <img src="./imagens/Img Instagran.png" alt="Logo Instagran" width= "40px"></img>
+                    <p>acop.sj</p><br>
+                </a><br>
+    
+                <a href="https://www.facebook.com/acop.sj?locale=pt_BR" target="_blank" rel="noopener noreferrer" title="Facebook">
+                    <img src="./imagens/facebook.png" alt="logo facebook" width="40px"></<img>
+                    <p>facebook</p><br>
+                </a><br>
+    
+                <p>
+                    &copy 2023 ACOP :
+                    Associacao Comunitaria Picadas do Sul CNPJ: 52.628.453/0001-60<br> 
+                    Natureza Jurídica: Associação Privada<br>
+                    Tipo: Matriz
+                </p>
+            </center>
+        </footer>
+        <!--Automacao do Formulario-->
         <script src="/script.js"></script> 
     </body>
 </html>

@@ -1,0 +1,148 @@
+/*//////////////////////////////
+////receba nossas noticias/////
+//////////////////////////////*/
+
+/* formulario Aside configuracao*/
+aside {
+    background-color: var(--dark1);
+    padding: 20px;
+}
+/*formulario noticias*/
+aside form input{/*configuracao do formulario*/
+    display: flex;  
+    flex-direction: column;
+    width: 450px;
+    color: var(--dark9);     
+}
+/*configura caixas formulario*/
+form input{
+    display: flex;
+    margin-top: 10px;
+    border: 4px solid black;
+    border-radius: 10px;
+    height: 20px;
+    padding: 10px;
+    font-size: 35px;
+    color: var(--dark1);
+}
+/*muda a cor nas caixas do formulario*/
+form input:hover{
+    display: flex;
+    background-color: var(--dark4);
+    color: black;
+    cursor: pointer;
+}
+
+/*////////////////////////////
+///////////cadastro//////////
+////////////////////////////*/
+
+/*config Pop Up Cadastro*/
+*:not(dialog){
+    font-size: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 10vh;
+}    
+.open-modal{
+    background-color: #228b22;
+    color: #70e3ea;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 16px;
+    font-size: 14px;
+    cursor: pointer;
+}
+dialog::backdrop{
+    background-color: #131010;
+}
+dialog{
+    border: none;
+    width: 350px;
+    border-radius: 24px;
+    padding: 18px;
+}
+.modal-heder{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+.modal-title {
+    font-size: 20px;
+    font-weight: 500;
+    color: #131010;
+}
+.clese-modal{
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    color: dimgray;
+    font-size: 18px;
+} 
+.modal-body{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.input-group{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.input-group label{
+    font-size: 14px;
+    font-weight: 500;
+    color: #32CD32;
+}
+.input-group input{
+    border: 1px solid #9acd32;
+    background-color: #90ee90;
+    border-radius: 8px;
+    padding: 10px 16px;
+}
+.input-group input:focus{
+    outline: 1px solid #e00e0e;
+}
+.password-options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.remember-password{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 14px;
+    color: #e00e0e;
+}
+.forgot-password{
+    font-size: 12px;
+    color: blueviolet;
+    text-decoration: none;
+}
+#login_button{
+    background-color: chocolate;
+    color: darkmagenta;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 16px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.register span{
+    font-size: 14px;
+    color: deeppink;
+}
+.register a{
+    font-size: 14px;
+    color: orangered;
+    text-decoration: none;
+}

@@ -1,0 +1,38 @@
+
+/*configura botao enviar*/
+aside form input[type="submit"]{
+    display: flex;
+    height: 60px;
+    width: 150px;
+    background-color: #e00e0e;
+    color: white;
+    font-weight: bold;
+}
+
+/*config botao cadastro-header*/
+.box-btn-acao{
+    display: flex;
+    gap: 1rem;
+}
+:is(button,.link-action){
+    padding: .6rem;
+    font-size: 2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .4s;
+}
+.btn-action{
+    background-color: transparent;
+    border: 1px solid var(--white);
+    color: var(--white);
+}
+.btn-action:hover{
+    background-color: var(--dark4);
+    border: 1px solid var(--dark9);
+}
+.link-action{
+    text-decoration: none;
+    width: 200px;
+    text-align: center;
+}
+

@@ -1,7 +1,9 @@
 <!DOCTYPE html>
+
 <!--Idioma da pagina-->
 <html lang="pt-br">
 
+    <!--conf pg WEB + link + titulo pg-->
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,26 +11,39 @@
         <title>Historico ACOP</title>
     </head>
 
-    <body>
+    <!--PG web-->
+    <body class="body-historico" id="body-pg-historico">
 
-        <header>
-            <div class="box-img-header">
-                <img src="/imagens/logo sem fundo.png" width= "120px" alt="Banner da Diretoria"> 
+        <!--cabecalho pg historico-->
+        <header class="header-historico" id="header-pg-historico">
+            <!--caixa img header logo acop-->
+            <div class="box-img-header-historico">
+                <!--img header logo acop-->
+                <img class="img-logo-ACOP-historico" 
+                    src="/imagens/logo sem fundo.png" 
+                    alt="logo da associacao"> 
             </div>
             <!--botao voltar inicio-->
             <nav id="Botao-Inicio">
                 <ul>
-                <li>                        
-                <a href="index.html">
-                <img src="/imagens/silhueta-de-icone-de-casa.png" width="70px" alt="Logo ACOP">                      
-                </a>
-                </li>
+                    <li> 
+                        <!--link pg principal-->                          
+                        <a href="index.html">
+                            <!--icone pg principal-->
+                            <img src="/imagens/silhueta-de-icone-de-casa.png" 
+                            width="70px" 
+                            alt="Logo ACOP"/>                      
+                        </a>
+                    </li>
                 </ul>                             
-            </nav>                                          
+            </nav>
+            <!--Titulo cabecalho-->                                          
             <h1>Historico</h1>                         
-        </header>                   
+        </header>
 
-        <main>
+        <!--corpo da PG-->
+        <main class="main-historico" id="main-pg-hidtorico">
+                <!--extruturas 01 da pg historico-->
                 <section id="Diretoria" class="primeira-secao">
                     <center>               
                     <h1>Membros Fundadores:</h1><br>                   
@@ -45,7 +60,7 @@
                     </p><br><br>
                     </div>
 
-                    <div class="buttons-estatuto">
+                    <div class="btn-estatuto">
                         <h1><label for="">Estatuto</label></h1>
                         <a href="/PDF Documentos/0336 - Estatuto Social - 07-05-2023.pdf" 
                             target="_blank" 
@@ -53,7 +68,7 @@
                     </div><br><br>
                     
                 </section>
-
+                <!--extruturas 02 da pg historico-->
                 <section id="Formacao" class="segunda-secao" > 
                         <center>
                     <div id="Boletim-Eleitoral">
@@ -71,7 +86,7 @@
                         </a></h2> 
                     </div><br><br>
                 </section>
-       
+                <!--extruturas 03 da pg historico-->
                 <section id="Registro" class="terceira-secao" >
                 <center>
                 <h1>Registro:</h1>
@@ -88,7 +103,7 @@
                     </p>
                 </center>        
                 </section>
-
+                <!--extruturas 04 da pg historico-->
                 <section id="Conquistas" class="quarta-secao" >
                 <center>
                 <h1>Conquistas:</h1>
@@ -111,7 +126,7 @@
                     </p>
                 </center>
                 </section>
-
+                <!--extruturas 05 da pg historico-->
                 <section id="Filme" class="quinta-secao" >
                     <center>
                     <h1>Registro da Assembleia</h1><br>
@@ -129,30 +144,37 @@
                     </center>
                 </section>
         </main>
-        
-        <footer>
+
+        <!--rodape da pg historico-->
+        <footer class="footer-hidtorico" id="footer-pg-historico">
             <center>
+                <!--link instagran-->
                 <a href="https://www.instagram.com/acop.sj/" 
                     target="_blank" 
                     rel="noopener noreferrer" 
                     title="Instagran">
+                    <!--icnoe instagran-->
                     <img src="./imagens/Img Instagran.png" 
                         alt="Logo Instagran" 
                         width= "40px">
                     </img>
+                    <!--titulo instagran-->
                     <p>acop.sj</p><br>
                 </a><br>
-    
+                <!--link facebook-->
                 <a href="https://www.facebook.com/acop.sj?locale=pt_BR" 
                     target="_blank" 
                     rel="noopener noreferrer" 
                     title="Facebook">
+                    <!--icone facebook-->
                     <img src="./imagens/facebook.png" 
                         alt="logo facebook" 
                         width="40px">
                     </<img>
+                    <!--titulo facebook-->
                     <p>facebook</p><br>
-                </a><br>    
+                </a><br>
+                <!--paragrafo rodape-->    
                 <p>
                     &copy 2023 ACOP :
                     Associacao Comunitaria Picadas do Sul CNPJ: 52.628.453/0001-60<br> 

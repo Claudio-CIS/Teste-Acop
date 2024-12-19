@@ -1,0 +1,9 @@
+
+/*config das imagens do cabecalho*/
+.box-img-header{
+    height: 100%;
+}
+.img-logo-ACOP{
+    max-width: 190px;
+    height: 100%;
+}

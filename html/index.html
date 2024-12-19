@@ -2,231 +2,317 @@
 <!DOCTYPE html>
 <!--Idioma-->
 <html lang="pt-br">
-<!--Ligacoes com outras paginas + Automacao (Metadados)-->    
-<head>    
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/CSS/style.css">
-      
-    <title>Site ACOP 01.1.1</title>
-</head>
+    <!--Ligacoes com outras paginas + Automacao (Metadados)-->    
+    <head>    
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/CSS/style.css"/>     
+        <title>ACOP Webite</title>
+    </head>
 
-<!--Pagina Web-->
-<body>
-    <!--Cabecalho-->    
-    <header>
-        <!--Organizacao dos Itens-->
-        <div class="box-img-header">
-            <img class="img-logo-ACOP" src="/imagens/logo sem fundo.png" alt="logo da associacao">
-        </div>
-        <!--ligacao para outras paginas-->
-        <nav>
-            <a href="Historico.html" class="nav-links">Historico</a>
-            <a href="Projetos.html" class="nav-links">Projetos</a>
-            <a href="PrestacaodeContas.html" class="nav-links">Prestacao de Contas</a>
-            <a href="Filiacao.html" class="nav-links"></a>
-            <a href="#contatos" class="nav-links">Contatos</a>
-        </nav>
-        <!--Form do Botao cadastro-->
-            <button class="open-modal" data-modal="modal-1">Cadastro</button>
-        <!--Corpo do Pop Up-->
-        <dialog id="modal-1">
-            <!--Corpo do Formulario-->            
-            <form>
-                <div class="modal-header">
-                    <h1 class="modal-title">Cadastro</h1>
-                    <!--abre o pop up-->                          <!--Type bloqiea envio de dados-->           
-                    <button class="close-modal"  data-modal="modal-1" type="button"> X </button>
-                </div>
-            
-                <div class="modal-body">
-                <div class="<input-group=">
-                    <label for="email"> Nome </label>
-                    <input type="text" id="nome" name="nome" placeholder="Nome Completo">
-                </div>
-            
-                <div class="modal-body">
-                <div class="<input-group=">
-                    <label for="email"> Telefone </label>
-                    <input type="value" id="telefone" name="telefone" placeholder="Telefone">
-                </div>    
-            
-                <div class="modal-body">
-                <div class="<input-group=">
-                    <label for="email"> Email </label>
-                    <input type="text" id="email" name="email" placeholder="name@example.com">
-                </div>
-            
-                <div class="<input-group=">
-                    <label for="password">Password</label>
-                    <input type="password" id="password" name="password" placeholder="...........">
-                </div>
-            
-                <div class="password-options">
-                <div class="remember-password">                                                                                
-                    <input type="checkbox" name="remember_password" id="remember_password">
-                    <label for="remember_password">Confirme a Senha</label>
-                </div>
-
-                <div>
-                    <a href="#" class="forgot-password">forgot password</a>
-                </div>
-            
-                <!--Botao confirma -->
-                <button id="login_button">login accont</button>
-                    <div class="register">
-                        <span>not register</span>
-                        <a href="#">login here</a>
-                    </div>
-            </form>
-        </dialog>       
-    </header>
-
-    <!--Corpo da Pagina-->
-    <main>
-        <!--extruturas 01 da Pagina-->
-        <section id="Incio" class="primeira-secao">
-            <div>
-                <!--Titulo 01-->
-                <h1>Venha se <strong>Associar</strong> para tornar ainda melhor nossa comunidade e seu bairro.</h1>                
-                <!--Botao Filiacao-->
-                <a class="btn-action link-action" href="Filiacao.html">Filiacao</a>
-            </div>
-            <!--Banner Propoaganda 01-->
-            <div class="box-img-main">
-                <img class="img-Banner-ACOP" src="/imagens/Banner ACOP 01.2.png" alt="Banner ACOP">
-            </div>            
-        </section>
-
-        <!--extrutura 02 da Pagina-->
-        <section id="Diretoria" class="segunda-secao">
-            <!--Receba Noticias-->
-            <aside>
-                <!--Titulo 02 da Pagina-->
-                <h1>Receba nossas Noticias.</h1>
-                    <!--Automacao para Salvar Dados do Formulario-->
-                    <form action="https://sheetdb.io/api/v1/gf7665omrm2n9"method="post"name="Form Receba nossas Noticias">                                                
-                        <!--formulario cadastro receba noticias-->
-                        <input type="text" name="Nome" placeholder="Nome">
-                        <input type="tel" name="Telefone" placeholder="Telefone">
-                        <!--Botao Enviar-->
-                        <input type="submit" value="Enviar">
-                    </form>        
-            </aside>            
-            <fieldset>
-                <!--Titulo 03 da Pagina-->
-                <center>
-                    <h2 class="titulo">Diretoria</h2><br><br><br><br>
-                    <!--Banner Propoaganda 02-->
+    <!--PG Web-->
+    <body class="body-principal" id="body-pg-principal">        
+        <!--cabecalho pg principal-->    
+        <header class="header-principal" id="header-pg-principal">
+            <!--posicionamento central na tela EFEITO responsevil-->
+            <div class="interface">
+                <!--secao logo acop hedaer pg principal-->
+                <section class="logo-sem-fundo">
                     <div>
-                        <img class="Banner-da-Diretoria" src="/imagens/Chapa 01 2023.jpg" alt="Banner-da-Diretoria">
-                    </div>
-                </center> 
-            </fieldset>                  
-        </section>
+                        <!--img logo acop secao header pg principal
+                        <img class="img-logo-ACOP-principal" 
+                            src="/imagens/logo sem fundo.png" 
+                            alt="logo da associacao"/>-->
+                    </div>                      
+                </section>                
+                <!--secao links header pg principal-->
+                <section class="principal-header-secao-nav-links">
 
-        <!--extrutura 03 da Pagina-->
-        <section id="Historico" class="terceira-secao" >
-            <fieldset>
-                <!--Titulo 04 da Pagina-->
-                <h2 class="titulo">Historico</h2>
-                <!--Lista 01-->
-                <ul>
-                <li>11/2022 Criacao da Comissao de Moradores</li>
-                <li>12/2022 Convocacao de Assembleia Ordinaria (Inicio do processo eleitoral)</li>
-                <li>01/2023 Registro da Chapa Eleita</li>
-                <li>03/2023 Atualizacao e Registro do novo Estatuto</li>
-                <li>06/2023 Contratacao de Acessoria Contabel</li>
-                <li>08/2024 Registro na Junta Comercial do Municipio (Alvara de Localizacao e Funcionamento)</li>
-                <li>10/2024 Decreto de Utilidade Publica</li>
-                </ul>
-            </fieldset>           
-        </section>
+                    <!--img logo acop secao header pg principal
+                    <img class="img-logo-ACOP-principal" 
+                    src="/imagens/logo sem fundo.png" 
+                    alt="logo da associacao"/>-->
 
-        <!--extrutura 04 da Pagina-->
-        <section id="Projetos" class="quarta-secao">
-            <fieldset>
-                <!--Titulo 05 da Pagina-->
-                <h2 class="titulo">Projetos</h2>
-                <!--Lista 02-->
-                <div> 
-                    <ul>
-                    <li>Curso de Informatica</li>
-                    <li>Cursos de Liguas</li>
-                    <li>Curso Artes Marciais</li>
-                    <li>Curso de Artesanato</li>
-                    <li>Escolinha de Futebol</li>
-                    <li>Escolinha de Volei</li>
-                    <li>Escolinha de Capoeira</li>
-                    <li>Curso de Empreendedorismo</li>
-                    </ul>
-                </div> 
-            </fieldset>                          
-        </section>
+                    <div class="principal-header-div-nav-links">
+                        <!--link para outras paginas               
+                        <nav class="nav-header-primcipal" id="nav-pg-principal">
+                            <a href="Historico.html" class="nav-links">Historico</a>
+                            <a href="Projetos.html" class="nav-links">Projetos</a>
+                            <a href="PrestacaodeContas.html" class="nav-links">Contas</a>
+                            <a href="Filiacao.html" class="nav-links"></a>                
+                        </nav>
+                    </div> 
+                </section>--> 
+                <!--Banner 01 juntos somos mais fortes
+                <section class="img-banner-header-principal">
+                    <div class="box-img-main-banner-principal">
+                        <img class="img-Banner-ACOP" 
+                            src="/imagens/Banner ACOP 01.2.png" 
+                            alt="Banner ACOP">-->
+                    </div><br><Br>
+                </section>
+                  
+                <!--Corpo do Pop Up-->
+                <dialog id="modal-1">
+                    <!--Corpo do Formulario pg principal-->            
+                    <form class="form-popup">
+                        <div class="modal-header">
+                            <h1 class="modal-title">Cadastro</h1>
+                            <!--abre o pop up--> <!--Type bloqiea envio de dados-->           
+                            <button class="close-modal"  
+                                data-modal="modal-1" 
+                                type="button"> X </button>
+                        </div>
+            
+                        <div class="modal-body">
+                        <div class="<input-group=">
+                            <label for="email"> Nome </label>
+                            <input type="text" id="nome" name="nome" placeholder="Nome Completo">
+                        </div>
+            
+                        <div class="modal-body">
+                        <div class="<input-group=">
+                            <label for="email"> Telefone </label>
+                            <input type="value" id="telefone" name="telefone" placeholder="Telefone">
+                        </div>    
+            
+                        <div class="modal-body">
+                        <div class="<input-group=">
+                            <label for="email"> Email </label>
+                            <input type="text" id="email" name="email" placeholder="name@example.com">
+                        </div>
+            
+                        <div class="<input-group=">
+                            <label for="password">Senha</label>
+                            <input type="password" id="password" name="password" placeholder="...........">
+                        </div>
+            
+                        <div class="password-options">
+                        <div class="remember-password">                                                                                
+                            <input type="checkbox" name="remember_password" id="remember_password">
+                            <label for="remember_password">Lembrar Senha</label>
+                        </div>
 
-        <!--extrutura 05 da Pagina-->
-        <section id="prestacao-de-contas" class="quinta-secao">
-            <fieldset>
-                <!--Titulo 06 da Pagina-->
-                <h2 class="titulo">Prestacao de Contas</h2><br><br><br><br>
-                <!--Banner Propoaganda 02-->
-                <div>
-                    <center>
-                    <img class="Imagem-da-planilha" src="/imagens/PRESTAÇÃO DE CONTAS - Comissão Moradores Jardim Pinheiros1.pdf.jpg" alt="Planilha com dados de arecadacao">
-                </center>
+                        <div class="forgot-password">
+                            <a href="#" class="forgot-password">Esqueceu sua senha</a>
+                        </div>
+
+                        <div class="login_button">
+                            <!--Botao confirma -->
+                            <button id="login_button">Acesse Aqui</button>
+                        </div>
+                       
+                        <div class="register">                            
+                            <span>Sem Cadastro</span>
+                            <a href="#">Fazer Login</a>                        
+                        </div>
+                    </form>
+                </dialog>
+            </div>           
+        </header>
+
+        <!--Corpo da pg principal-->
+        <main class="main-principal" id="main-pg-principal">
+            
+            <!--extruturas 01 da pg principal-->
+            <section id="Incio" class="primeira-secao-pg-principal">
+               <!--mrg titulo e banner pg principal--> 
+              <!--<fieldset class="mrg-secao-01" id="mrg-pg-principal">-->
+                    <!--Titulo 01 pg principal-->
+                    <div class="div-titulo-primeira-secao">                    
+                        <h1>Venha se associar<br>
+                            para tornar ainda<br> 
+                            melhor nossa comunidade<br>
+                            e seu bairro.</h1>
+                                                                 
+                    </div><br>
+                     <!--secao btn cadastro header pg principal-->
+            <section>
+                <!--caixa Btn cadastro pg principal-->
+                <div class="open-modal-btn"id="btn-cadastro">
+                    <!--btn cadastro pg principal-->
+                    <button class="open-modal" id="btn-cadastro" data-modal="modal-1">Cadastro</button>
                 </div>
-            </fieldset>           
-        </section>
-    </main>
+            </section>
+            
+            <!--secao links header pg principal-->
+            <section class="principal-header-secao-nav-links">
+                <!--img logo acop secao header pg principal
+                <img class="img-logo-ACOP-principal" 
+                src="/imagens/logo sem fundo.png" 
+                alt="logo da associacao"/>-->
+                <div class="principal-header-div-nav-links">
+                    <!--link para outras paginas-->                
+                    <nav class="nav-header-primcipal" id="nav-pg-principal">
+                        <a href="Historico.html" class="nav-links">Historico</a>
+                        <a href="Projetos.html" class="nav-links">Projetos</a>
+                        <a href="PrestacaodeContas.html" class="nav-links">Contas</a>
+                        <a href="Filiacao.html" class="nav-links"></a>                
+                    </nav>
+                </div> 
+            </section><br>
+            
+                    <!--caixa btn link pg filiacao-->
+                    <div class="div-btn-links">
+                        <!--btn link pg filiacao-->                
+                        <a class="btn-action link-action" 
+                            id="btn-main-pg-principal" 
+                            href="Filiacao.html">Filiacao</a>
+                    </div><br><br>
+                    <!--Banner 01 juntos somos mais fortes
+                    <div class="box-img-main-principal"/>
+                        <img class="img-Banner-ACOP" 
+                            src="/imagens/Banner ACOP 01.2.png" 
+                            alt="Banner ACOP"/>-->              
+                </fieldset>   
+            </section>
 
-    <!--Extrutura do Rodape-->
-    <footer id="contatos">
-        <!--Titulo 07 da Pagina-->
-        <center>
-        <h2 class="titulo">Contatos</h2><br><br><br><br>
-            <!--Ligacao Para Redes Sociais 01-->
-            <a href="https://www.instagram.com/acop.sj/" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                title="Instagran">
-                <img src="./imagens/Img Instagran.png" 
+            <!--extrutura 02 da pg principal-->
+            <section id="Diretoria" class="segunda-secao-pg-principal">               
+                <!--margem da secao diretoria-->
+                <!--<fieldset class="mrg-diretoria" id="mrg-secao-02">
+                    <!--Titulo 03 da Pagina-->
+                    <center>
+                        <h2 class="titulo-diretoria">Diretoria</h2><br><br><br><br>
+                        <!--Banner 02 diretoria 2023/2026-->
+                        <div>
+                            <img class="Banner-da-Diretoria" 
+                            src="/imagens/Chapa 01 2023.jpg" 
+                            alt="Banner-da-Diretoria"/>
+                        </div>
+                    </center>
+                </fieldset>
+                <section class="form-receba-noticias-main-principal">
+                    <div class="form-receba-noticias-main">
+                        <!--Formulario Receba Noticias-->
+                        <!--<aside>: Cria um conteúdo de apoio/adicional ao conteúdo principal-->
+                        <aside class="aside-receba-noticia" id="aside-pg-principal">
+                            <!--Titulo formulario pg principal-->
+                            <h1 class="titulo-form-segunda-secao">Receba nossas Noticias.</h1>
+                            <!--Automacao para Salvar Dados do Formulario-->
+                            <form class="form-noticias" action="https://sheetdb.io/api/v1/gf7665omrm2n9"
+                                    method="post"
+                                    name="Form Receba nossas Noticias">                                                
+                                <!--formulario cadastro receba noticias-->
+                                <input type="text" name="Nome" placeholder="Nome">
+                                <input type="tel" name="Telefone" placeholder="Telefone">
+                                <!--Botao Enviar formulario noticias-->
+                                <input class="btn-enviar" type="submit" value="Enviar">
+                            </form>        
+                        </aside>
+                    </div>
+                </section>                  
+            </section><br><br>
+
+            <!--extrutura 03 da pg principal-->
+            <section id="Historico" class="terceira-secao" >
+                <!--mrg secao historico-->   
+                <!--<fieldset>
+                    <!--Titulo 04 da Pagina-->
+                    <h2 class="titulo">Historico</h2>
+                    <!--Lista 01 secao historico-->
+                    <ul>
+                        <li>11/2022 Criacao da Comissao de Moradores</li>
+                        <li>12/2022 Convocacao de Assembleia Ordinaria (Inicio do processo eleitoral)</li>
+                        <li>01/2023 Registro da Chapa Eleita</li>
+                        <li>03/2023 Atualizacao e Registro do novo Estatuto</li>
+                        <li>06/2023 Contratacao de Acessoria Contabel</li>
+                        <li>08/2024 Registro na Junta Comercial do Municipio (Alvara de Localizacao e Funcionamento)</li>
+                        <li>10/2024 Decreto de Utilidade Publica</li>
+                    </ul>
+                </fieldset>           
+            </section><br><br>
+
+            <!--extrutura 04 da pg principal-->
+            <section id="Projetos" class="quarta-secao">
+                <!--mrg secao projetos-->    
+                <fieldset>
+                    <!--Titulo 05 da Pagina-->
+                    <h2 class="titulo">Projetos</h2>
+                    <!--Lista 02 secao projetos-->
+                    <div> 
+                        <ul>
+                            <li>Curso de Informatica</li>
+                            <li>Cursos de Liguas</li>
+                            <li>Curso Artes Marciais</li>
+                            <li>Curso de Artesanato</li>
+                            <li>Escolinha de Futebol</li>
+                            <li>Escolinha de Volei</li>
+                            <li>Escolinha de Capoeira</li>
+                            <li>Curso de Empreendedorismo</li>
+                        </ul>
+                    </div> 
+                </fieldset>                          
+            </section><br><br>
+
+            <!--extrutura 05 da pg principal-->
+            <section id="prestacao-de-contas" class="quinta-secao">
+                <!--mrg tabela-->
+                <fieldset>
+                    <!--Titulo 06 secao pt contas-->
+                    <h2 class="titulo">Prestacao de Contas</h2><br><br><br><br>
+                    <!--Banner 03 planilhas contas-->
+                    <div>
+                        <center>
+                            <!--img tabela-->
+                            <img class="Imagem-da-planilha" 
+                                src="/imagens/PRESTAÇÃO DE CONTAS - Comissão Moradores Jardim Pinheiros1.pdf.jpg" 
+                                alt="Planilha com dados de arecadacao">
+                        </center>
+                    </div>
+                </fieldset>           
+            </section><br><br>
+        </main>
+
+        <!--Rodape da pg principal-->
+        <footer class="footer-principal" id="footer-pg-principal">
+            <!--Titulo 07 da Pagina-->
+            <center>
+                <h2 class="titulo">Contatos</h2><br><br><br><br>
+                <!--Ligacao Para Redes Sociais 01 instagran-->
+                <a href="https://www.instagram.com/acop.sj/" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    title="Instagran"/>
+                    <img src="./imagens/Img Instagran.png" 
                     alt="Logo Instagran" 
                     width= "40px"></img>
-                <p>acop.sj</p><br>
-            </a><br>
-            <!--Ligacao Para Redes Sociais 02-->
-            <a href="https://www.facebook.com/acop.sj?locale=pt_BR" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                title="Facebook">
-                <img src="./imagens/facebook.png" 
-                    alt="logo facebook" 
-                    width="40px"></<img>
-                <p>facebook</p><br>
-            </a><br>
-            <!--Dados de Registro-->    
-            <p>
-                &copy 2023 ACOP :
-                Associacao Comunitaria Picadas do Sul CNPJ: 52.628.453/0001-60<br> 
-                Natureza Jurídica: Associação Privada<br>
-                Tipo: Matriz
-            </p>
-        </center>
-    </footer>
+                    <p>acop.sj</p><br>
+                </a><br>
+                <!--Ligacao Para Redes Sociais 02 facebook-->
+                <a href="https://www.facebook.com/acop.sj?locale=pt_BR" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    title="Facebook">
+                    <img src="./imagens/facebook.png" 
+                        alt="logo facebook" 
+                        width="40px"></<img>
+                    <p>facebook</p><br>
+                </a><br>
+                <!--Dados de Registro-->    
+                <p>
+                    &copy 2023 ACOP :
+                    Associacao Comunitaria Picadas do Sul CNPJ: 52.628.453/0001-60<br> 
+                    Natureza Jurídica: Associação Privada<br>
+                    Tipo: Matriz
+                </p>
+            </center>
+        </footer>
 
-    <!--Ligacao Para Pasta de Automacao-->
-    <script src="/script.js"></script>
-    <script src="/main.js"></script> 
-    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
-    
-    <script>
-    $('#phone_with_ddd').mask('(00) 0000-0000');
-    $('#cep').mask('00000-000');
-    </script>
-</body>
-    
+        <!--Ligacao Para Pasta de Automacao-->
+        <script src="/script.js"></script>
+        <script src="/main.js"></script> 
+        <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+        <script>
+        $('#phone_with_ddd').mask('(00) 0000-0000');
+        $('#cep').mask('00000-000');
+        </script>
+    </body>    
 </html>
 
 <!--https://www.alura.com.br/artigos/o-que-e-html-suas-tags-parte-1-estrutura-basica?utm_term=&utm_campaign=%5BSearch%5D+%5BPerformance%5D+-+Dynamic+Search+Ads+-+Artigos+e+Conte%C3%BAdos&utm_source=adwords&utm_medium=ppc&hsa_acc=7964138385&hsa_cam=11384329873&hsa_grp=164068847699&hsa_ad=703853174125&hsa_src=s&hsa_tgt=aud-1295637864136:dsa-2273097816642&hsa_kw=&hsa_mt=&hsa_net=adwords&hsa_ver=3&gad_source=2&gclid=CjwKCAiA6t-6BhA3EiwAltRFGKK2SxG5sg4eTNVU3pzR2mMqnCZEmWy3DVwbPq6oYUl1cYXJntDNmhoCVPIQAvD_BwE-->

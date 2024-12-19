@@ -1,57 +1,64 @@
 <!DOCTYPE html>
-<html lang="pt=br">
-<head>
+    <html lang="pt=br">
+
+    <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/CSS/style.css">
 
     <title>Filiacao</title>
-</head>
-<body> 
-      
-    <!--Cabecalho-->   
-    <header>
-        <!--Organizacao dos Itens-->
-        <div class="box-img-header">
-            <img class="img-logo-ACOP" src="/imagens/logo sem fundo.png" alt="logo da associacao">
-        </div> 
-        <!--botao voltar inicio--> 
-        <nav id="Botao-Inicio">
-            <ul>
-                <li>                        
-                    <a href="index.html">
-                        <img src="/imagens/silhueta-de-icone-de-casa.png" width="70px" alt="Logo ACOP">                      
-                    </a>
-                </li>
-             </ul>                             
-        </nav> 
-        <h1>Filiacao</h1>              
-    </header>
-    <br>
-    <br>
-    <!--Corpo da Pagina-->
-    <main>
+    </head>
 
-        <center><h1>Ficha de Filiacao</h1></center>
+    <!--pg web filiacao-->
+    <body class="body-filiacao" id="body-pg-filiacao"> 
 
-        <section id="Formulario-3" 
-                class="primeira-secao">
-            <div class="content">
-                <form action="">
-                    <fieldset>
+        <!--Cabecalho pg filiacao-->   
+        <header class="header-Filiacao" id="header-pg-filiacao">
+            <!--logo da acop-->
+            <div class="box-img-header">
+                <img class="img-logo-ACOP" 
+                    src="/imagens/logo sem fundo.png" 
+                    alt="logo da associacao">
+            </div>
+            <!--botao voltar inicio-->
+            <div> 
+                <nav id="Botao-Inicio">
+                    <ul>
+                        <li>                        
+                            <a href="index.html">
+                            <img src="/imagens/silhueta-de-icone-de-casa.png" 
+                                width="70px" 
+                                alt="Logo ACOP"/>                      
+                            </a>
+                        </li>
+                    </ul>                             
+                </nav>
+            </div>
+            <!--titulo header filiacao--> 
+            <div>
+                <h1>Filiacao</h1>
+            </div>              
+        </header>
+        
+        <!--Corpo da pg filiacao-->
+        <main class="main-filiacao" id="main-pg-filiacao">
+            <center><h1>Ficha de Filiacao</h1></center>
+            <section id="Formulario-3"class="primeira-secao">
+                <div class="content">
+                    <form action="">
+                        <fieldset>
+                            <legend>Dados Pessoais</legend><br>
 
-                        <legend>Dados Pessoais</legend><br>
-
-                        <div class="row">
+                            <div class="row">
                             <label for="Nome">Nome Completo:</label>
                             <input type="text" 
                                     id="nome" 
                                     name="nome" 
                                     autocomplete="off" 
                                     required>
-                        </div>
+                            </div>
 
-                        <div class="row">
+                            <div class="row">
                             <label for="RG">RG</label>
                             <input type="number" 
                                     id="RG" 
@@ -59,9 +66,9 @@
                                     min="0" 
                                     autocomplete="off" 
                                     required>
-                        </div>
+                            </div>
 
-                        <div class="row">
+                            <div class="row">
                             <label for="CPF">CPF</label>
                             <input type="text" 
                                     id="CPF" 
@@ -70,41 +77,41 @@
                                     min="0" 
                                     autocomplete="off"
                                     required>                            
-                        </div>
+                            </div>
                 
-                        <div class="row">
+                            <div class="row">
                             <label for="Nacionalidade">Nacionalidade</label>
                             <input type="text" 
                                     id="nacionalidade" 
                                     name="nacionalidade" 
                                     autocomplete="off">
-                        </div>
+                            </div>
 
-                        <div class="row">
+                            <div class="row">
                             <label for="Estado">Estado</label>
                             <input type="text" 
                                     id="Estado" 
                                     name="Estado" 
                                     autocomplete="off">
-                        </div>
+                            </div>
 
-                        <div class="row">
+                            <div class="row">
                             <label for="Municipio">Municipio</label>
                             <input type="text" 
                                     id="Municipio" 
                                     name="Municipio">
-                        </div>
+                            </div>
 
-                        <div class="row">                   
+                            <div class="row">                   
                             <label for="dtnasc">Data de Nascimento</label><br>
                             <input type="date" 
                                     id="dtnasc" 
                                     name="dtnasc" 
                                     autocomplete="off" 
                                     required>
-                        </div><br>
+                            </div><br>
                 
-                        <div class="row">
+                            <div class="row">
                             <label for="Estado-civil">Estado-civil: </label><br><br>
                             <label for="casado">Casado</label>
                             <input type="radio" 
@@ -117,9 +124,9 @@
                                     value="Solteiro" 
                                     id="Solteiro" 
                                     name="estadocivil">                    
-                        </div><br>
+                            </div><br>
 
-                        <div class="row">
+                            <div class="row">
                             <label for="Filhos">Filhos:</label><br><br>
                               <label for="nao-tenho">Nao Tenho</label>                
                             <input type="radio" 
@@ -139,9 +146,9 @@
                                     name="Filhos" 
                                     max="10" 
                                     min="0">                           
-                        </div><br>
+                            </div><br>
                 
-                        <div class="row">
+                            <div class="row">
                             <label for="endereco">Endereco</label>
                             <input type="text" 
                                     id="texto" 
@@ -158,9 +165,9 @@
                                     name="CEP" 
                                     maxlength="8" 
                                     min="0">                   
-                        </div>
+                            </div>
 
-                        <div class="row">
+                            <div class="row">
                             <label for="phone">Telefone</label>
                             <input id="phone" 
                                     type="text" 
@@ -170,36 +177,36 @@
                                     min="0" 
                                     autocomplete="off" 
                                     required>
-                        </div>
+                            </div>
 
-                        <div class="row">
+                            <div class="row">
                             <label for="">E-mai:</label>
                             <input type="email" 
                                     id="email" 
                                     name="email">
-                        </div><br><br>
+                            </div><br><br>
 
-                        <div class="buttons-estatuto">
-                            <h1><label for="">Estatuto</label></h1>
-                            <a href="/PDF Documentos/0336 - Estatuto Social - 07-05-2023.pdf" 
+                            <div class="buttons-estatuto">
+                                <h1><label for="">Estatuto</label></h1>
+                                <a href="/PDF Documentos/0336 - Estatuto Social - 07-05-2023.pdf" 
                                 target="_blank" 
                                 rel="noopener noreferrer">Baixar</a> 
-                        </div><br><br>
+                            </div><br><br>
 
-                    </fieldset>
+                        </fieldset>
 
-                    <div class="buttons">
+                        <div class="buttons">
                         <input type="submit">
                         <input type="reset">
-                    </div>
+                        </div>
 
-                </form>
-            </div>
-        </section><br>
-    </main>
+                    </form>
+                </div>
+            </section><br>
+        </main>
 
-    <!--Rodape-->
-    <footer id="contatos">
+        <!--Rodape pg filiacao-->
+        <footer class="footer-filiacao" id="footer-filiacao">
         <center>
             <h2 class="titulo">Contatos</h2><br><br><br><br>
         
@@ -220,12 +227,13 @@
                 Tipo: Matriz
             </p>
         </center>
-    </footer>
+        </footer>
 
-    <!--Automacao do Formulario-->          
-    <script src="/script.js"></script>
-    <script src="/main.js"></script>    
-</body>
+        <!--Automacao do Formulario filiacao-->          
+        <script src="/script.js"></script>
+        <script src="/main.js"></script> 
+
+    </body>
 </html>
 
 <!--https://www.youtube.com/watch?v=OHZm00A33Fs-->

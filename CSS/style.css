@@ -1,13 +1,12 @@
-/*Ligacao Externa da Fonte Lato*/
+
+/*/////////////////////////////////////////////
+/////////Ligacao Externa da Fonte Lato/////////
+/////////////////////////////////////////////*/
 @import url('https://fonts.googleapis.com/css2?family=Lato');
 
-/*zerando as margens*/
-*{
-    margin: 0;
-    padding: 10;
-}
-
-/*Palhetas de Cores da Pagina*/
+/*/////////////////////////////////////
+//////Palhetas de Cores da Pagina//////
+/////////////////////////////////////*/
 :root{
     --white: #fff;
     --dark1: #32CD32;
@@ -19,163 +18,379 @@
     --dark7: #228b22;
     --dark8: #2e8b57;
     --dark9: #2f4f4f;
+    --CarkStateGray: #2f4f4f;
+    --DarkGreen: #006400;
+    --Green: #008000;
+    --ForestGreen: #228b22;
+    --LimeGreen: #32cd32;
+    --Lime: #00ff00;
+    --LawnGreen: #7cfc00;
+    --Red: #ff0000;
+    --black: #000000;
+    --DarkBlue: #00008b;
+    --cyan: #00ffff;
     --cyan1: #70e3ea;
+    --PowderBlue: #b0e0e6;
+    --Beige: #f5f5dc;
+    --Cornsilk: #fff8dc;
+    --Bisque: #ffe4c4;
+    --PeachPuff: #ffdab9;
 }
 
+/*/////////////////////////////////
+//////////zerando as margens///////
+/////////////////////////////////*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", serif;
+}
 
-/*config estilo da pagina principal*/
-body{
-    background-color: var(--dark1);
-    height: 100vh;
+/*///////////////////////////////////////////
+//////config estilo das paginas WEB//////////
+///////////////////////////////////////////*/
+.body-principal{
+    background-color: var(--LimeGreen);
+    font-size: 'Lato';
+}
+.body-historico{
+    background-color: var(--LimeGreen);
+    height: 10vh;
+    font-family: 'Lato';
+}
+.body-projetos{
+    background-color: var(--LimeGreen);
+    height: 10vh;
+    font-family: 'Lato';
+}
+.body-contas{
+    background-color: var(--LimeGreen);
+    height: 10vh;
+    font-family: 'Lato';
+} 
+.body-filiacao{
+    background-color: var(--LimeGreen);
+    height: 10vh;
+    font-family: 'Lato';
+}
+.body-cadastro{
+    background-color: var(--LimeGreen);
+    height: 10vh;
     font-family: 'Lato';
 }
 
-
-
-
-/*config estilo do cabecalho*/
-header{
+/*///////////////////////////////////
+////config estilo dos cabecalhos ////
+///////////////////////////////////*/
+.header-principal{       
+    background-image: url(/imagens/Banner\ ACOP\ 01.2.png);
+    justify-content: center;
+    background-size: cover;
+    margin: auto;
+    margin-top: auto;
+    max-width: 2000px;
+    height: 550px;         
+}
+.interface{   
     display: flex;
+    text-decoration: none;
+    margin: auto;
+    height: 400px;
+    width: 2300px;
+    padding: 10px 10px;
+    gap: 9px;    
+}
+header-pg-principal .interface{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+}
+header-pg-principal .principal-secao-nav-links{
+    display: inline-block;
+    margin: 0 10px;
+    align-items: center;
+    text-decoration: none;   
+}
+
+#header-pg-historico{
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    gap: 1rem;
-    flex-wrap: wrap;
     padding: .8rem;
-    background-color: var(--dark7);
+    gap: 1rem;
+    font-size: 50px;
     min-height: 50px;
-    font-size: 40px;
+    background-color: var(--ForestGreen);   
 }
-
-
-/*config das imagens do cabecalho*/
-.box-img-header{
-    height: 100%;
-}
-.img-logo-ACOP{
-    max-width: 120px;
-    height: 100%;
-}
-
-
-/*config dos Links para outras paginas*/
-nav{
+#header-pg-projetos{
     display: flex;
-    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: .8rem;
+    gap: 1rem;
+    font-size: 50px;
+    min-height: 50px;
+    background-color: var(--ForestGreen); 
+}
+#header-pg-contas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: .8rem;
+    gap: 1rem;
+    font-size: 50px;
+    min-height: 50px;
+    background-color: var(--ForestGreen); 
+}
+#header-pg-filiacao{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: .8rem;
+    gap: 1rem;
+    font-size: 50px;
+    min-height: 50px;
+    background-color: var(--ForestGreen); 
+}
+
+/*/////////////////////////////////////////////
+////config imagens logo acop dos cabecalhos////
+/////////////////////////////////////////////*/  
+.box-img-header-historico{
+    display: flex;
+    height: 100%;
+    width: auto;
+    height: auto;
+    max-width: auto;
+    min-width: auto;
+}
+.img-logo-ACOP-historico{
+    display: flex;
+    max-width: 195px;
+    height: 100%;
+}
+.box-img-header-projetos{
+    display: flex;
+    height: 100%;
+    width: auto;
+    height: auto;
+    max-width: 11900px;
+    min-width: auto;
+}
+.img-logo-ACOP-projetos{
+    display: flex;
+    max-width: 195px;
+    height: 100%;
+}
+.box-img-header-contas{
+    display: flex;
+    height: 100%;
+    width: auto;
+    height: auto;
+    max-width: 11900px;
+    min-width: auto;
+}
+.img-logo-ACOP-contas{
+    display: flex;
+    max-width: 195px;
+    height: 100%;
+}
+
+/*////////////////////////////////////////////////////////////
+////conf links historico,projetos,pt-contasdo no cabecalho////
+////////////////////////////////////////////////////////////*/
+.nav-header-primcipal{/*config de posicionamento dos Links Historico,Projetos,PTContas*/
+    display: flex;
+    flex-wrap: wrap;  
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-}
-.nav-links{
-    text-decoration: none;
-    color: var(--white);
-}
-.nav-links:hover{
-    color: var(--dark1);
-    transition: .4s;
-    text-decoration: underline;
-}
-
-
-
-/*config botao cadastro-header*/
-.box-btn-acao{
-    display: flex;
-    gap: 1rem;      
-}
-:is(button,.link-action){
-    padding: .6rem;
-    font-size: 2rem;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: .4s;
-}
-.btn-action{
-    background-color: transparent;
-    border: 1px solid var(--white);
-    color: var(--white);
-}
-.btn-action:hover{
-    background-color: var(--dark4);
-    border: 1px solid var(--dark9);
-}
-.link-action{
-    text-decoration: none;
-    width: 200px;
-    text-align: center;
-}
-
-
-
-/*config corpo da pagina*/
-main{
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;    
-}
-/* config estruturas da pagina*/
-section{
-    padding: 2rem;
-}
-.primeira-secao{
-    display: flex;
-    justify-content: space-evenly;
     gap: 2rem;
-    flex-wrap: wrap;
-    align-items: center;
-    min-height: 650px;
-    font-size: 2rem;
+    font-size: 60px;
+    width: 80px; 
+    background-color: var(--LimeGreen);    
 }
-.primeira-secao > div{
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    min-width: 1990px;
-}
-h1{
-    font-size: 4rem;
-    color:black;
-    letter-spacing: 4px;
-}
-strong{
-    color: var(--white);
-}
-.primeira-secao p{
-    color: var(--white);
+.nav-links{/*conf cor das palavras historico,projetos,ptcontas */
+    text-decoration: none;
+    color: var(--black);
+    width: 26px;
     
 }
+.nav-links:hover{/*conf efeito de destaque das palavras hisstorico, projetos,ptcontas*/
+    color: var(--Red);
+    transition: .4s;
+    text-decoration: underline;
+    
+}
+.Banner-da-Diretoria{
+    height: 16vh;
+    background-image: url(/imagens/Chapa\ 01\ 2023.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: auto;
+}
+
+/*///////////////////////////////////////////
+////conf btn cadastro-header pg principal////
+///////////////////////////////////////////*/
+.open-modal{/*caixa btn cadastro pg principal*/
+    display: flex;   
+}
+.open-modal{/*conf btn cadastro pg principal*/
+    padding: .1rem;
+    font-size: 2rem;
+    border-radius: 1px;
+    border: 1px solid var(--LawnGreen);
+    background-color: transparent;
+    color: var(--white);
+    transition: .4s;
+    cursor: pointer;      
+}
+.open-modal:hover{/*conf efeitos btn cadastro pg principal*/
+    background-color: var(--Red);
+    border: 3px solid var(--white);
+    color: var(--white);    
+}
+
+/*////////////////////////////
+////config corpo da pagina////
+////////////////////////////*/
+.main-principal{/*conf corpo da pg principal*/
+    display: flex;
+    flex-direction: column;     
+}
+
+/*///////////////////////////
+////config primeira secao////
+///////////////////////////*/
+.primeira-secao-pg-principal{/*conf da primeira secao*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;      
+    align-items: center;
+    min-height: 10px;
+    font-size: 10px;
+    gap: 6rem; 
+}
+.div-titulo-primeira-secao{/*conf titulo 01 primeira secao juntos somos mais fortes*/
+    display: flex;
+    font-size: 1.8rem;   
+    letter-spacing: 1px;
+    width: 640px;
+    color:black;
+}
+
+/*///////////////////////
+////conf btn filiacao////
+///////////////////////*/
+.box-btn-acao{
+    display: flex;
+    gap: 2.1rem;
+}
+.btn-action{
+    display: flex;
+    background-color: transparent;
+    border: 4px solid var(--white);
+    color: var(--white);    
+}
+.btn-action:hover{
+    background-color: var(--Red);
+    border: 3px solid var(--Cornsilk);
+}
+.link-action{
+    display: flex;
+    text-decoration: none;    
+    letter-spacing: 5px;
+    margin-left: 100px;   
+    width: 190px;   
+    padding: .8rem;
+    font-size: 7px;
+    border-radius: 20px; 
+}
+:is(button,.link-action){
+    display: flex;
+    padding: .8rem;
+    font-size: 2rem;
+    border-radius: 1px;
+    border: 8px solid var(--white);
+    color: var(--white);
+    background-color: var(--Bisque);
+    background-color: transparent;
+    cursor: pointer;
+    transition: .4s; 
+}
+
+/*/////////////////////////////////////////////
+////conf Banner 01 juntos somos mais fortes////
+/////////////////////////////////////////////*/
 .box-img-main{
-    max-width: 450px;
-    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    width: auto;
+    max-width: auto ;
+    padding: 8px;
 }
-.segunda-secao{
-    background-color: var(--dark6);
-    height: 1300px;
+
+/*//////////////////////////
+////config segunda secao////
+//////////////////////////*/
+.titulo-diretoria{
+    background-color: var(--DarkGreen);
+    font-size: 45px;
+    
 }
-.titulo{
-    color: #131010;   
+.aside-receba-noticia{/*form receba nossas noticias*/
+    height: 235px;
+    width: 490px;
+    margin-top: 40px;
+    margin-left: 90px;
+    background-color: transparent;    
+    background-color: var(--dark1);
 }
-.img-Banner-da-Diretoria{
-    width: 20px;
-    height: 20px;
+.titulo-form-segunda-secao{ /*receba nossas noticias*/
+    display: flex;
+    font-size: 40px;
+    width: 450px;
 }
+.form-receba-noticias-main-principal{
+    display: flex;
+    justify-content: center;
+       
+}
+.form-noticias{/*corpo do form*/   
+    background-color: transparent;
+    height: 140px;
+    width: 459px; 
+    background-position: center;
+    background-size: cover;
+    
+}
+
+
 .terceira-secao{
     background-color: var(--dark6);
 }
 .titulo{
-    color: #131010;
     display: flex;
-    height: 20px;
-    font-size: 80px;
     justify-content: center;
+    font-size: 45px;
+    background-color: var(--DarkGreen);
 }
-.terceira-secao ul{
-    min-width: 300px;
-    gap: 2rem;
-    height: 600px;
-    padding: 10rem;
-    font-size: 60px;
-    flex-wrap: wrap;
-    letter-spacing: 4px;
+.terceira-secao ul li{
+    display: flex;
+    justify-content: center;   
+    height: 150px;
+    font-family: "Lato", serif;
+    font-family: 'Lato';
+    font-size: 45px; 
+    background-color: var(--LimeGreen);
 }
 .quarta-secao{
     background-color: var(--dark6);
@@ -201,12 +416,11 @@ strong{
     display: flex;
     width: 1690px;
     height: 880px;
-
 }
 
-
-
-/*config rodape da pagina*/
+/*/////////////////////////////
+////config rodape da pagina////
+/////////////////////////////*/
 footer{
     display: flex;
     background-color: var(--dark1);
@@ -215,13 +429,12 @@ footer{
     font-size: 40px;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10px;
-   
+    gap: 10px; 
 }
 
-
-
-/* Aside configuracao*/
+/*////////////////////////
+////Aside configuracao////
+////////////////////////*/
 aside {
     background-color: var(--dark1);
     padding: 20px;
@@ -237,12 +450,12 @@ aside form input{/*configuracao do formulario*/
 form input{
     display: flex;
     margin-top: 10px;
-    border: 4px solid black;
-    border-radius: 10px;
-    height: 20px;
+    border: 5px solid black;
+    border-radius: 15px;
+    height: 45px;
     padding: 10px;
     font-size: 35px;
-    color: white;
+    color: var(--dark1);
 }
 /*muda a cor nas caixas do formulario*/
 form input:hover{
@@ -254,8 +467,9 @@ form input:hover{
 /*configura botao enviar*/
 aside form input[type="submit"]{
     display: flex;
-    height: 60px;
-    width: 150px;
+    justify-content: center;
+    height: 80px;
+    width: 130px;
     background-color: #e00e0e;
     color: white;
     font-weight: bold;
@@ -263,114 +477,3 @@ aside form input[type="submit"]{
 
 
 
- /*config Pop Up Cadastro
-
-*:not(dialog){
-    font-size: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body {
-    background-color: aquamarine;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 10vh;
-}    
-.open-modal{
-    background-color: #228b22;
-    color: #70e3ea;
-    border: none;
-    border-radius: 8px;
-    padding: 10px 16px;
-    font-size: 14px;
-    cursor: pointer;
-}
-dialog::backdrop{
-    background-color: #131010;
-}
-dialog{
-    border: none;
-    width: 350px;
-    border-radius: 24px;
-    padding: 18px;
-}
-.modal-heder{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 16px;
-}
-.modal-title {
-    font-size: 20px;
-    font-weight: 500;
-    color: #131010;
-}
-.clese-modal{
-    cursor: pointer;
-    border: none;
-    background-color: transparent;
-    color: dimgray;
-    font-size: 18px;
-} 
-.modal-body{
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
-.input-group{
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
-}
-.input-group label{
-    font-size: 14px;
-    font-weight: 500;
-    color: #32CD32;
-}
-.input-group input{
-    border: 1px solid #9acd32;
-    background-color: #90ee90;
-    border-radius: 8px;
-    padding: 10px 16px;
-}
-.input-group input:focus{
-    outline: 1px solid #e00e0e;
-}
-.password-options{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.remember-password{
-    display: flex;
-    align-items: center;
-    gap: 4px;
-    font-size: 14px;
-    color: #e00e0e;
-}
-.forgot-password{
-    font-size: 12px;
-    color: blueviolet;
-    text-decoration: none;
-}
-#login_button{
-    background-color: chocolate;
-    color: darkmagenta;
-    border: none;
-    border-radius: 8px;
-    padding: 10px 16px;
-    font-size: 14px;
-    cursor: pointer;
-}
-.register span{
-    font-size: 14px;
-    color: deeppink;
-}
-.register a{
-    font-size: 14px;
-    color: orangered;
-    text-decoration: none;
-}
-*/
